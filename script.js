@@ -104,24 +104,26 @@ function highlightPhrase(text) {
     `;
     form.appendChild(block);
    
-    const successSound = new Audio("success.mp3");
-
+const successSound = new Audio("success.mp3");
+    const wrongSound = new Audio("wrong.mp3");
+  
     form.addEventListener("change", function (e) {
       if (e.target.name === `q${i}`) {
         const selectedValue = e.target.value;
         const labels = block.querySelectorAll("label");
         labels.forEach(label => label.classList.remove("correct"));
-
+  
         if (selectedValue === q.correct) {
-            successSound.play();
+          successSound.play();
           alert("Good Job Buck-a-roo");
           const correctLabel = e.target.closest("label");
           correctLabel.classList.add("correct");
-
+  
           // Disable other options
           const inputs = block.querySelectorAll(`input[name="q${i}"]`);
           inputs.forEach(input => input.disabled = true);
         } else {
+          wrongSound.play();
           alert("Try again");
           e.target.checked = false;
         }
