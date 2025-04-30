@@ -82,9 +82,7 @@ const questions = [
         correct: "c"
       },
 
-    // 2nd 8 set of questions.....................................................................................................................................
-
-     {
+        {
       question: "Thinketh No Evil: Only ______________, clean, honorable thoughts, with pure intentions.",
       options: {
         a: "holy",
