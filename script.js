@@ -67,7 +67,7 @@ const questions = [
           a: "Fellowship",
           b: "Truthful",
           c: "Guiding",
-          d: "selflessness"
+          d: "Selflessness"
         },
         correct: "d"
       },
