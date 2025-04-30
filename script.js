@@ -81,7 +81,91 @@ const questions = [
         },
         correct: "c"
       },
-    // Add more questions...
+
+    // 2nd 8 set of questions.....................................................................................................................................
+
+     {
+      question: "Thinketh No Evil: Only ______________, clean, honorable thoughts, with pure intentions.",
+      options: {
+        a: "holy",
+        b: "pure",
+        c: "fair",
+        d: "purposeful"
+      },
+      correct: "a"
+    },
+    {
+      question: "Rejoiceth Not In Iniquity: Does not ______________ unrighteousness.",
+      options: {
+        a: "laugh at",
+        b: "celebrate",
+        c: "consider",
+        d: "cherish"
+      },
+      correct: "b"
+    },
+    {
+        question: "Rejoiceth In Truth: To openly ______________, take great joy in and celebrate the Truth of God.",
+        options: {
+          a: "sing",
+          b: "pronounce",
+          c: "cheer",
+          d: "delight"
+        },
+        correct: "d"
+      },
+      {
+        question: "Beareth All Things: Covers (as in a roof) _______________, supports, carries, wears, keeps, sustains.",
+        options: {
+          a: "severs",
+          b: "builds",
+          c: "suffers",
+          d: "moves"
+        },
+        correct: "c"
+      },
+
+    {
+      question: "Believeth All Things: Faith, trust, true & honest, _____________--. Gods existence as a fact, willing to commit your life to Him.",
+      options: {
+        a: "strength",
+        b: "strong",
+        c: "willing",
+        d: "sanctified"
+      },
+      correct: "a"
+    },
+    {
+      question: "Hopeth All Things: The sure expectation of all the ____________ of God.",
+      options: {
+        a: "lands",
+        b: "promises",
+        c: "existence",
+        d: "goodness"
+      },
+      correct: "b"
+    },
+    {
+        question: "Endureth All Things: _____________, bear trials, have fortitude, persevere, patient, still.",
+        options: {
+          a: "Seek",
+          b: "repent",
+          c: "retain",
+          d: "remain"
+        },
+        correct: "d"
+      },
+      {
+        question: "THE FATHER holds unerringly. JESUS's BLOOD never loses its power. The HOLY GHOST ___________ into all truth.",
+        options: {
+          a: "walks",
+          b: "lights",
+          c: "guides",
+          d: "shews"
+        },
+        correct: "c"
+      },
+    
   ];
   
   
