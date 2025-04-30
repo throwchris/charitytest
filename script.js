@@ -40,6 +40,47 @@ const questions = [
         },
         correct: "c"
       },
+
+    {
+      question: "Not Puffed Up: Abased, lowly. Is not ____________ or made proud, not haughty or puffed up. Does not have a false sense of one's own authority.",
+      options: {
+        a: "inflated",
+        b: "boasting",
+        c: "evil",
+        d: "lazy"
+      },
+      correct: "a"
+    },
+    {
+      question: "Doth Not Behave Itself Unseemly: To act courteously, with wisdom; ________________, appropriate, refined.",
+      options: {
+        a: "learning",
+        b: "respectable",
+        c: "hopeful",
+        d: "defined"
+      },
+      correct: "b"
+    },
+    {
+        question: "Seeketh Not Her Own: _______________, devotion, empathy. Sacrifice for the sake of others. Giving without expectation.",
+        options: {
+          a: "Fellowship",
+          b: "Truthful",
+          c: "Guiding",
+          d: "selflessness"
+        },
+        correct: "d"
+      },
+      {
+        question: "Not Easily Provoked: Slow to anger, _____________ peaceably.",
+        options: {
+          a: "showing",
+          b: "living",
+          c: "enduring",
+          d: "walking"
+        },
+        correct: "c"
+      },
     // Add more questions...
   ];
   
