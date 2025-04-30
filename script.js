@@ -173,7 +173,8 @@ const questions = [
     const block = document.createElement("div");
     block.className = "question-block";
     block.innerHTML = `
-      <p><strong>${i + 1}. ${q.question}</strong></p>
+      block.innerHTML = `
+      <p><strong>${i + 1}. ${highlightPhrase(q.question)}</strong></p>
       <label><input type="radio" name="q${i}" value="a"> a. ${q.options.a}</label>
       <label><input type="radio" name="q${i}" value="b"> b. ${q.options.b}</label>
       <label><input type="radio" name="q${i}" value="c"> c. ${q.options.c}</label>
