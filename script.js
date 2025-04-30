@@ -124,7 +124,7 @@ const questions = [
       },
 
     {
-      question: "Believeth All Things: Faith, trust, true & honest, _____________--. Gods existence as a fact, willing to commit your life to Him.",
+      question: "Believeth All Things: Faith, trust, true & honest, _____________. Gods existence as a fact, willing to commit your life to Him.",
       options: {
         a: "strength",
         b: "strong",
