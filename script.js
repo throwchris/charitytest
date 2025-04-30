@@ -60,14 +60,22 @@ const questions = [
     form.appendChild(block);
   
     form.addEventListener("change", function (e) {
-        if (e.target.name === `q${i}`) {
-          if (e.target.value === q.correct) {
-            alert("GREAT GOING BUCK-A-ROO");
-          } else {
-            alert("PLEASE TRY AGAIN");
-            e.target.checked = false;
+      if (e.target.name === `q${i}`) {
+        const selectedValue = e.target.value;
+        const labels = block.querySelectorAll("label");
+        labels.forEach(label => label.classList.remove("correct"));
+  
+        if (selectedValue === q.correct) {
+          alert("Good Job Buck-a-roo");
+          const correctLabel = e.target.closest("label");
+          correctLabel.classList.add("correct");
+          // Disable other options for that question
+          const inputs = block.querySelectorAll(`input[name="q${i}"]`);
+          inputs.forEach(input => input.disabled = true);
+        } else {
+          alert("Try again");
+          e.target.checked = false;
         }
       }
     });
   });
-  
