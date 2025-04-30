@@ -26,7 +26,7 @@ const questions = [
           a: "not fearing",
           b: "honoring",
           c: "loving",
-          d: "satiisfied"
+          d: "satisfied"
         },
         correct: "d"
       },
