@@ -25,4 +25,10 @@ body {
   h1 {
     text-align: center;
   }
+
+.highlight {
+  color: green;
+  font-weight: bold;
+}
+
   
