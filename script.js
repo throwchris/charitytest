@@ -83,7 +83,7 @@ function highlightPhrase(text) {
       correct: "d"
     },
     {
-      question: "\"THE FATHER\": holds unerringly. JESUS's BLOOD never loses its power. The HOLY GHOST ___________ into all truth.",
+      question: "\"Charity Never Faileth\":THE FATHER holds unerringly. JESUS's BLOOD never loses its power. The HOLY GHOST ___________ into all truth.",
       options: { a: "walks", b: "lights", c: "guides", d: "shews" },
       correct: "c"
     }
