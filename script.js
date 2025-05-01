@@ -103,8 +103,18 @@ function highlightPhrase(text) {
       <label><input type="radio" name="q${i}" value="d"> d. ${q.options.d}</label><br>
     `;
     form.appendChild(block);
+
+    setTimeout(() => {
+        successSound.currentTime = 0;
+        successSound.play();
+      }, 50); // delay helps ensure it’s seen as a separate interaction
+
+      setTimeout(() => {
+        wrongSound.currentTime = 0;
+        wrongSound.play();
+      }, 50);
    
-const successSound = new Audio("success.mp3");
+    const successSound = new Audio("success.mp3");
     const wrongSound = new Audio("wrong.mp3");
   
     form.addEventListener("change", function (e) {
@@ -115,7 +125,8 @@ const successSound = new Audio("success.mp3");
   
         if (selectedValue === q.correct) {
           successSound.play();
-          alert("Good Job Buck-a-roo");
+          bigTextAlert("Good Job Buck-a-roo");
+;
           const correctLabel = e.target.closest("label");
           correctLabel.classList.add("correct");
   
@@ -124,9 +135,19 @@ const successSound = new Audio("success.mp3");
           inputs.forEach(input => input.disabled = true);
         } else {
           wrongSound.play();
-          alert("Try again");
+          bigTextAlert("Try again");
           e.target.checked = false;
         }
       }
     });
   });
+
+  function bigTextAlert(message) {
+    const alertBox = document.getElementById('bigTextAlert');
+    alertBox.textContent = message;
+    alertBox.style.display = 'block';
+    setTimeout(() => {
+      alertBox.style.display = 'none';
+    }, 5000); // Hide after 2 seconds
+  }
+  
